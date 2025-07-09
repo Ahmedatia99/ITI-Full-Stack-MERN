@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jessica Doe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        img {
+            width: 250px;
+            height: 250px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: separate;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            margin-bottom: 10px;
+            padding: 5px;
+
+        }
+        .form-group {
+            display: flex;
+            gap: 5px
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="./images/person.jpg" alt="Jessica Doe">
+
+    <h1>Jessica Doe</h1>
+    <p>Hello! I am Jessica, a web development enthusiast who loves learning new technologies.</p>
+
+    <h2>My Hobbies</h2>
+    <ul>
+        <li>Reading Books</li>
+        <li>Playing Guitar</li>
+        <li>Coding</li>
+    </ul>
+
+    <h2>Favorite Website</h2>
+    <p>Check out my favorite website: <a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a></p>
+
+    <h2>Skills & Experience</h2>
+    <table>
+        <tr>
+            <th>Skill</th>
+            <th>Experience (Years)</th>
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>1.5</td>
+        </tr>
+    </table>
+
+    <h2>Contact Me</h2>
+    <form>
+        <div class="form-group">
+
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label><br>
+            <input type="email" name="email"><br>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>

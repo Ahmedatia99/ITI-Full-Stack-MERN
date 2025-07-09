@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="./style.css" rel="stylesheet" />
+    <title>Profile Form</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Your basic info</h2>
+
+        <form>
+            <label>Name</label>
+            <input type="text" id="name" name="name">
+
+            <label>Email</label>
+            <input type="email" id="email" name="email" value="atia">
+
+            <label>Password</label>
+            <input type="password" id="password" name="password">
+
+            <label>Age:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="age" value="under16"> Under 16</label>
+                <label><input type="radio" name="age" value="16orolder"> 16 or Older</label>
+            </div>
+
+            <h2>Your profile</h2>
+
+            <label>Biography</label>
+            <textarea id="bio" name="bio"></textarea>
+
+            <label>Select Courses</label>
+            <select id="courses">
+                <option>Computer Science Engineering</option>
+                <option>Mechanical Engineering</option>
+                <option>Electrical Engineering</option>
+                <option>Civil Engineering</option>
+            </select>
+
+            <label>Interests:</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="interest" value="engineering"> Engineering</label>
+                <label><input type="checkbox" name="interest" value="business"> Business</label>
+                <label><input type="checkbox" name="interest" value="law"> Law</label>
+            </div>
+
+            <button type="submit" class="submit-btn">SUBMIT</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
