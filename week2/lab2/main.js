@@ -1,0 +1,157 @@
+// Using the given array tasks (today content folder):
+// Please create dynamic cards section using DOM methods &
+// properties.
+// Showing all properties of the object into that card.
+// Use CSS classes for styling.
+
+const tasks = [
+  {
+    id: 1,
+    title: "Buy groceries",
+    description: "Milk, bread, eggs, and fruits from the supermarket.",
+    dueDate: "2025-07-15",
+    priority: "High",
+    completed: false,
+  },
+  {
+    id: 2,
+    title: "Finish homework",
+    description: "Complete math and science assignments for Monday.",
+    dueDate: "2025-07-16",
+    priority: "Medium",
+    completed: true,
+  },
+  {
+    id: 3,
+    title: "Call mom",
+    description: "Check in and talk about weekend plans.",
+    dueDate: "2025-07-14",
+    priority: "Low",
+    completed: false,
+  },
+  {
+    id: 4,
+    title: "Schedule dentist appointment",
+    description: "Call Dr. Smith’s office and book for next week.",
+    dueDate: "2025-07-18",
+    priority: "High",
+    completed: true,
+  },
+  {
+    id: 5,
+    title: "Clean the kitchen",
+    description: "Wipe counters, mop floor, and take out trash.",
+    dueDate: "2025-07-15",
+    priority: "Medium",
+    completed: false,
+  },
+  {
+    id: 6,
+    title: "Workout session",
+    description: "1 hour at the gym or a run in the park.",
+    dueDate: "2025-07-14",
+    priority: "High",
+    completed: false,
+  },
+  {
+    id: 7,
+    title: "Read a book",
+    description: "Read 30 pages of 'Atomic Habits'.",
+    dueDate: "2025-07-17",
+    priority: "Low",
+    completed: false,
+  },
+  {
+    id: 8,
+    title: "Team meeting",
+    description: "Weekly sync with the project team on Zoom.",
+    dueDate: "2025-07-14",
+    priority: "High",
+    completed: true,
+  },
+  {
+    id: 9,
+    title: "Write blog post",
+    description: "Draft a new post about JavaScript performance tips.",
+    dueDate: "2025-07-19",
+    priority: "Medium",
+    completed: false,
+  },
+  {
+    id: 10,
+    title: "Laundry",
+    description: "Wash, dry, and fold clothes.",
+    dueDate: "2025-07-15",
+    priority: "Low",
+    completed: true,
+  },
+  {
+    id: 11,
+    title: "Backup files",
+    description: "Back up important documents to cloud storage.",
+    dueDate: "2025-07-16",
+    priority: "Medium",
+    completed: false,
+  },
+  {
+    id: 12,
+    title: "Pay utility bills",
+    description: "Electricity and internet bills due this week.",
+    dueDate: "2025-07-14",
+    priority: "High",
+    completed: true,
+  },
+  {
+    id: 13,
+    title: "Plan weekend trip",
+    description: "Decide on location and book accommodation.",
+    dueDate: "2025-07-20",
+    priority: "Low",
+    completed: false,
+  },
+  {
+    id: 14,
+    title: "Organize desk",
+    description: "Clear clutter and arrange items neatly.",
+    dueDate: "2025-07-15",
+    priority: "Medium",
+    completed: false,
+  },
+  {
+    id: 15,
+    title: "Update resume",
+    description: "Add recent projects and review formatting.",
+    dueDate: "2025-07-21",
+    priority: "High",
+    completed: false,
+  },
+];
+const container = document.createElement("div");
+container.className = "container";
+document.body.appendChild(container);
+tasks.forEach((task) => {
+  const card = document.createElement("div");
+  card.className = "card";
+
+  const title = document.createElement("h2");
+  title.textContent = task.title;
+  card.appendChild(title);
+
+  const description = document.createElement("p");
+  description.textContent = task.description;
+  card.appendChild(description);
+
+  const dueDate = document.createElement("p");
+  dueDate.textContent = `Due Date: ${task.dueDate}`;
+  card.appendChild(dueDate);
+
+  const priority = document.createElement("p");
+  priority.textContent = `Priority: ${task.priority}`;
+  card.appendChild(priority);
+
+  const completed = document.createElement("p");
+  completed.textContent = `Completed: ${task.completed ? "Yes" : "No"}`;
+  card.appendChild(completed);
+
+  container.appendChild(card);
+});
