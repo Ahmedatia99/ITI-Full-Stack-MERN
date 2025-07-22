@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HTML5&CSS3</title>
+</head>
+
+<body>
+    <div class="container">
+        <video id="video" width="320" height="240" controls>
+            <source src="./Fortnite 2023.04.02 - 06.18.20.27.DVR.1680409733119.mp4" type="video/mp4" />
+        </video>
+        <div class="controls">
+            <button id="play">Play</button>
+            <button id="stop">Stop</button>
+            <button id="rewind">
+                << </button>
+                    <button id="fast-rewind">
+                        < </button>
+                            <button id="fast-forward"> > </button>
+                            <button id="initial"> >> </button>
+                            <button id="mute">Mute</button>
+                            <label for="speed">Speed</label>
+                            <input type="range" id="speed" min="0.5" max="2" step="0.1" value="1" />
+        </div>
+    </div>
+    <div class="container ">
+        <form id="ranges">
+            <input type="range" id="r" min="0" max="100" step="1" value="0" />
+            <input type="range" id="g" min="0" max="100" step="1" value="0" />
+            <input type="range" id="b" min="0" max="100" step="1" value="0" />
+        </form>
+        <p id="text">this text will be changed focus ya 3am</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
