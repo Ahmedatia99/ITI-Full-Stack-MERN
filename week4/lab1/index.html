@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery tasks</title>
+    <script src="jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- this is task 1 -->
+    <div>
+        <a href="" id="mypage">mypage</a>
+        <a href="https://www.facebook.com/" id="facebook">Facebook</a>
+        <a href="https://iti.gov.eg/">ITI</a>
+        <button id="btn">Add target</button>
+    </div>
+
+    <!-- this is task 2 -->
+    <div>
+        <h2>Student Registration</h2>
+    </div>
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <label for="age">Age:</label>
+        <input type="number" id="age">
+        <button id="addBtn">Add Student</button>
+    </div>
+    <table id="studentsTable" border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <!-- this is task3 -->
+    <ul class="tabs">
+        <li class="tab active" data-content="task1">Task 1</li>
+        <li class="tab" data-content="task2">Task 2</li>
+        <li class="tab" data-content="task3">Task 3</li>
+    </ul>
+    <div>
+        <div id="task1" class="task-content">This is Task 1 content.</div>
+        <div id="task2" class="task-content" style="display:none;">This is Task 2 content.</div>
+        <div id="task3" class="task-content" style="display:none;">This is Task 3 content.</div>
+    </div>
+    <script src="main.js"></script>
+    <script src="jquery-3.7.1.js"></script>
+</body>
+
+</html>
