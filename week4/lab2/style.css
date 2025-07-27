@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.post {
+    background-color: white;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.post p {
+    color: #555;
+}
+#sidebar {
+    width: 200px;
+    background-color: #ddd;
+    padding: 10px;
+    height: 500px;
+}
+
+.slide {
+    background-color: #777;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.items {
+    background-color: #ccc;
+    display: none;
+}
+
+.item {
+    padding-left: 20px;
+    padding-top: 3px;
+}
