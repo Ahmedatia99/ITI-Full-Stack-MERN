@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.layout {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.sidebar {
+    width: 220px;
+    background: #f5f5f5;
+    padding: 10px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.sidebar ul {
+    list-style: none;
+}
+.sidebar ul li {
+    margin: 10px 0;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.main {
+    flex: 1;
+    padding: 20px;
+}
+.main h1 {
+    margin-bottom: 15px;
+}
+.filter {
+    margin-bottom: 20px;
+}
+.filter button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    background: #eee;
+    cursor: pointer;
+}
+.filter button.active {
+    background: #333;
+    color: #fff;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card {
+    flex: 1 1 calc(33.333% - 20px);
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.card .content {
+    padding: 10px;
+}
+.card .content h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.card .content p {
+    font-size: 14px;
+    color: #555;
+}
+
+@media (max-width: 900px) {
+    .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .sidebar img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 0;
+    }
+    .card {
+        flex: 1 1 100%;
+    }
+    .layout {
+        flex-direction: column;
+    }
+    .sidebar h2 {
+        display: none;
+    }
+    .sidebar ul {
+        display: flex;
+        gap: 15px;
+    }
+}

@@ -1,0 +1,79 @@
+//Nested rule
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// using a mixin
+@mixin rounded($radius) {
+  border-radius: $radius;
+}
+
+.box-square {
+  @include rounded(0);
+}
+
+.box-rounded {
+  @include rounded(10px);
+}
+//  use extend
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333;
+}
+
+.success {
+  @extend .message;
+  border-color: green;
+}
+
+.error {
+  @extend .message;
+  border-color: red;
+}
+
+.warning {
+  @extend .message;
+  border-color: yellow;
+}
+// using @extend + variables
+$twitter: #55acee;
+$facebook: #3b5998;
+$white: #fff;
+
+.social {
+  min-width: 100px;
+  padding: 1em;
+  border-radius: 1em;
+  color: $white;
+}
+
+a.twitter {
+  @extend .social;
+  background: $twitter;
+}
+
+span.facebook {
+  @extend .social;
+  background: $facebook;
+}
+// function with condition
+@function set-color($direction, $color) {
+  @if $direction == ltr {
+    @return $color;
+  } @else {
+    @return blue;
+  }
+}
+
+div {
+  background-color: set-color(ltr, red); // will be red
+}
+
+div.rtl {
+  background-color: set-color(rtl, red); // will be blue
+}
