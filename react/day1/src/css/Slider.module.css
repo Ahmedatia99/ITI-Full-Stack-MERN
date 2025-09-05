@@ -1,0 +1,24 @@
+.carousel {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.slideImg {
+  height: 500px;
+  object-fit: cover; /* يخلي الصورة تملى المكان من غير ما تبوز */
+}
+
+.caption {
+  background: rgba(0, 0, 0, 0.55); /* خلفية شفافة */
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+}
+
+.caption h3,
+.caption p {
+  color: #f8f9fa; /* يخلي النص أبيض */
+  margin: 0;
+}
