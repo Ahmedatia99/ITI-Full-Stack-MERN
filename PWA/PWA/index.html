@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PWA</title>
+    <meta name="theme-color" content="#0ea5e9" />
+
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icons/icon-192.svg" sizes="192x192" />
+    <link rel="icon" href="./icons/icon-512.svg" sizes="512x512" />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>PWA</h1>
+
+      <div class="actions">
+        <button id="installBtn" hidden>Install</button>
+        <span id="installedTag" class="tag" hidden>Installed </span>
+      </div>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

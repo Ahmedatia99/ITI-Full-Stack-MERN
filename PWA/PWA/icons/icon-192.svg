@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="192" y2="192" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <filter id="blur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+  <rect width="192" height="192" rx="40" fill="#0b1220"/>
+  <g filter="url(#blur)">
+    <circle cx="48" cy="56" r="28" fill="#0ea5e9" opacity=".35"/>
+    <circle cx="160" cy="92" r="24" fill="#38bdf8" opacity=".35"/>
+  </g>
+  <path d="M48 128c0-26.51 21.49-48 48-48s48 21.49 48 48v8a8 8 0 0 1-8 8H56a8 8 0 0 1-8-8v-8z" fill="url(#g)"/>
+  <circle cx="96" cy="76" r="24" fill="url(#g)"/>
+</svg>
+
+
