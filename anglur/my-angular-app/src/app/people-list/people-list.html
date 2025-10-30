@@ -1,0 +1,21 @@
+<div class="container my-4">
+  <h3 class="mb-3 text-center">People List</h3>
+
+  <div #messageDiv class="alert alert-info text-center">
+    {{ message() }}
+  </div>
+
+  <button class="btn btn-primary mb-3" (click)="changeMessage()">
+    Change Message
+  </button>
+
+  <div class="row">
+    @for (person of people(); track person.name) {
+      <app-person>
+        <span name>{{ person.name }}</span>
+        <span age>{{ person.age }}</span>
+        <span #country country>{{ person.country }}</span>
+      </app-person>
+    }
+  </div>
+</div>

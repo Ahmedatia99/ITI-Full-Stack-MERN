@@ -1,0 +1,21 @@
+
+.app-header{
+height: 55px;
+       width: 40%;
+
+}
+.app-nav{
+    width: 60%;
+}
+@media (max-width: 992px) {
+  .responsive-flex {
+    flex-direction: column !important;
+    align-items: start;
+  }
+.app-header{
+    width: 100%;
+}
+.app-nav{
+    width: 100%;
+}
+}

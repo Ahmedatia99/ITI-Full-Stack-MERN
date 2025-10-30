@@ -1,0 +1,26 @@
+<ul>
+  @for (group of peopleByCountry; track group.country) {
+  <li>
+    @switch (group.country) {
+    @case ('UK') {
+    <span style="color: blue;">{{ group.country }}</span>
+    }
+    @case ('US') {
+    <span style="color: red;">{{ group.country }}</span>
+    }
+    @case ('MARS') {
+    <span style="color: orange;">{{ group.country }}</span>
+    }
+    @default {
+    <span>{{ group.country }}</span>
+    }
+    }
+
+    <ul>
+      @for (person of group.people; track person.name) {
+      <li>{{ person.name }}</li>
+      }
+    </ul>
+  </li>
+  }
+</ul>
