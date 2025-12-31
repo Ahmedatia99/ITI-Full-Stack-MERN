@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Updated Title",
+    "author": "Updated Author"
+  },
+  {
+    "id": 3,
+    "title": "Updated Title3",
+    "author": "Updated Author3"
+  },
+  {
+    "id": 4,
+    "title": "Book 4",
+    "author": "Author 4"
+  },
+  {
+    "id": 5,
+    "title": "Book 5",
+    "author": "Author 5"
+  },
+  {
+    "id": 6,
+    "title": "Updated Title6",
+    "author": "Updated Author6"
+  },
+  {
+    "id": 7,
+    "title": "Updated Title7",
+    "author": "Updated Author7"
+  }
+]
