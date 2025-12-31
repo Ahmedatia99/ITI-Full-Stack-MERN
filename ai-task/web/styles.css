@@ -1,0 +1,117 @@
+/* Global styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f9;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+/* Main container */
+main {
+  width: 90%;
+  max-width: 600px;
+  background: #ffffff;
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.4s ease;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 28px;
+}
+
+/* Label */
+label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  padding: 12px;
+  resize: none;
+  border-radius: 10px;
+  border: 1px solid #d0d0d0;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s ease;
+  background: #fafafa;
+}
+
+textarea:focus {
+  border-color: #007bff;
+  background: #fff;
+}
+
+/* Controls (buttons container) */
+.controls {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+/* Buttons */
+button {
+  flex: 1;
+  padding: 12px;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #007bff;
+  color: #fff;
+  font-weight: 500;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #005fcc;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Output area */
+.output {
+  margin-top: 20px;
+  padding: 15px;
+  min-height: 60px;
+  border-radius: 10px;
+  background: #f7f9fc;
+  border: 1px solid #dcdcdc;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.output span {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

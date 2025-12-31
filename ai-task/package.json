@@ -1,0 +1,16 @@
+{
+  "name": "quicksort-lab",
+  "version": "1.0.0",
+  "description": "QuickSort lab: recursive + iterative implementations, tests, benchmark, and web demo",
+  "main": "src/quicksort.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "benchmark": "node src/benchmark.js",
+    "start": "npx http-server web -p 8080"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QuickSort Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main>
+    <h1>QuickSort Demo</h1>
+    <label for="arrayInput">Enter numbers (comma separated):</label>
+    <textarea id="arrayInput" rows="4" placeholder="e.g. 5,3,8,1"></textarea>
+    <div class="controls">
+      <button id="runRecursive">Sort (Recursive)</button>
+      <button id="runIterative">Sort (Iterative)</button>
+      <button id="runBuiltin">Sort (Built-in)</button>
+    </div>
+    <div id="output" class="output"></div>
+
+    <section id="benchmarkSection" style="margin-top:24px">
+      <h2 style="font-size:18px;margin-bottom:8px">Benchmark Chart</h2>
+      <div style="max-width:900px; height:320px;">
+        <canvas id="benchChart" width="800" height="320"></canvas>
+      </div>
+      <div id="benchMeta" style="margin-top:8px;color:#666;font-size:13px"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="benchmark.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+{
+  "generated": 1763984144055,
+  "results": [
+    {
+      "n": 500,
+      "recursive_ms": 0.551,
+      "iterative_ms": 0.294,
+      "builtin_ms": 0.157
+    },
+    {
+      "n": 1000,
+      "recursive_ms": 0.095,
+      "iterative_ms": 0.28,
+      "builtin_ms": 0.259
+    },
+    {
+      "n": 2500,
+      "recursive_ms": 0.146,
+      "iterative_ms": 0.608,
+      "builtin_ms": 0.565
+    },
+    {
+      "n": 5000,
+      "recursive_ms": 0.375,
+      "iterative_ms": 0.301,
+      "builtin_ms": 0.85
+    },
+    {
+      "n": 10000,
+      "recursive_ms": 0.583,
+      "iterative_ms": 0.573,
+      "builtin_ms": 1.791
+    },
+    {
+      "n": 20000,
+      "recursive_ms": 1.78,
+      "iterative_ms": 1.298,
+      "builtin_ms": 4.124
+    }
+  ]
+}
